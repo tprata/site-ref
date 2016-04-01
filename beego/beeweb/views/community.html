@@ -1,0 +1,96 @@
+{{template "base/base.html" .}}
+{{define "head"}}{{end}}
+{{define "meta"}}
+<title>{{i18n .Lang "community"}} - beego: {{i18n .Lang "app_intro"}}</title>
+{{end}}
+{{define "body"}}
+<div class="container main-container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="box">
+				<div class="cell slim page-box markdown">
+					    <div class="col-md-4">
+            				<div class="home-box">
+                				<h2>Our goal</h2>
+                				<div class="well markdown">
+                    				<ul class="list-unstyled">
+                				        {{if eq .Lang "fr-FR"}}
+                				            <li><i class="icon-angle-right"> Une information accessible</i></li>
+                				            <li><i class="icon-angle-right"> Une information certifiée</i></li>
+                				            <li><i class="icon-angle-right"> Une aide personnalisée</i></li>
+                				        {{else}}
+                				            <li><i class="icon-angle-right"> An accessible information</i></li>
+                				            <li><i class="icon-angle-right"> A certified information</i> </li>
+                				            <li><i class="icon-angle-right"> A personnalized help</i></li>
+                 				       	{{end}}
+                				    </ul>
+                				</div>
+                			</div>
+                		</div>
+                		<div class="row">
+	      					<div class="col-md-4">
+    	            			<div class="cell slim page-box markdown">
+                                <div class="home-box">
+    	            				<h2>Get in touch</h2>
+				    				<p>Follow the project : </p>
+				    				<ul id="chooser-blocks" class="option-chooser-blocks">
+				        				<a target="_blank" href="https://github.com/tprata/site-ref"><li>Github<img class="img-responsive" src="/static/img/community/github.png"> </li></a>
+				        				<a target="_blank" href="https://interact-autism.slack.com/"><li>Slack<img class="img-responsive" src="/static/img/slack-icon-logo.png"> </li></a>
+				    				</ul>
+                                    </div>
+				    			</div>
+            		    	</div>
+            			</div>
+    			</div>
+                {{if eq .Lang "fr-FR"}}
+                    <div class="home-box">
+                        <h2>Projets communautaires</h2>
+                        <li><i> Essayez les, ou informez vous ci-dessous</i></li>
+                    </div>
+                {{else}}
+                    <div class="home-box">
+                        <h2>Community projects</h2>
+                        <li><i> Try theses, or get inform below</i></li>
+                    </div>
+                {{end}}
+    				<div class="row">
+				        <ul id="chooser-blocks" class="option-chooser-blocks">
+                        <div class="col-md-1">
+                            <a target="_blank" href="https://redwire.io/game/bb23ce4b9da32bab/play"><li>Red My Way<img class="img-responsive" src="/static/img/RedMyWay.png"><div class="col-md-12"></div></li>  <a href="https://ideaweave.io/profile/559b8f74b0d6d5237045f7a6" class="btn btn-lg btn-info">With RedMyWay you can discover and train your children's programming logic by Mourdjen Bari</a></a>
+                        </div>
+					   	</ul>
+                    </div>
+                    <div class="row">
+                        <ul id="chooser-blocks" class="option-chooser-blocks">
+                        <div class="col-md-1">
+                              <a target="_blank" href="https://redmetrics.io/"><li>For Research<img class="img-responsive" src="/static/img/logo_ISC.png"><div class="col-md-12"></div></li>  <a href="https://iscpif.fr/blog/projects/mapping-autistic-cognitive-abilities/"class="btn btn-lg btn-info">Mapping autistic cognitive abilities with Institut des Systèmes Complexes by Fabienne Cazalis</a></a>
+                        </div>
+                        </ul>
+					</div>
+                    <div class="row">
+                        <ul id="chooser-blocks" class="option-chooser-blocks">
+                        <div class="col-md-1">
+                              <a target="_blank" href="https://redmetrics.io/"><li>Ma-nuit<img class="img-responsive" src="/static/img/logo_partnership/app_logo.png"><div class="col-md-12"></div></li>  <a href="https://iscpif.fr/blog/projects/mapping-autistic-cognitive-abilities/"class="btn btn-lg btn-info">Produce anonymised data for research, analyse and follow personally your child's nights with Ma-nuit </a></a>
+                        </div>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <ul id="chooser-blocks" class="option-chooser-blocks">
+                        <div class="col-md-1">
+                              <a target="_blank" href="https://redmetrics.io/"><li>Ma-voix<img class="img-responsive" src="/static/img/logo_partnership/app_logo.png"><div class="col-md-12"></div></li>  <a href="https://iscpif.fr/blog/projects/mapping-autistic-cognitive-abilities/"class="btn btn-lg btn-info">Helps non-verbal children to communicate with you about his/her needs</a></a>
+                        </div>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <ul id="chooser-blocks" class="option-chooser-blocks">
+                        <div class="col-md-1">
+                              <a target="_blank" href="https://redmetrics.io/"><li>Mon-quotidien<img class="img-responsive" src="/static/img/logo_partnership/app_logo.png"><div class="col-md-12"></div></li>  <a href="https://iscpif.fr/blog/projects/mapping-autistic-cognitive-abilities/"class="btn btn-lg btn-info">Produce daily anonymised data for Research and personal purpose</a></a>
+                        </div>
+                        </ul>
+                    </div>
+
+			</div>
+		</div>
+	</div>
+</div>
+{{end}}

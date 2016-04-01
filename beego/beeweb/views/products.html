@@ -1,0 +1,17 @@
+{{template "base/base.html" .}}
+{{define "head"}}{{end}}
+{{define "meta"}}
+<title>{{i18n .Lang "products_use_beego"}} - beego: {{i18n .Lang "app_intro"}}</title>
+{{end}}
+{{define "body"}}
+<div id="products" class="container main-container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="product-head">
+				<h2>{{i18n .Lang "products_use_beego"}}</h2>
+				<iframe src='//cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1aMvTia8QYiLyG1Jpc1CqIBXUZneNZPnFL095QiTdfw4&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' frameborder='0'></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+{{end}}
