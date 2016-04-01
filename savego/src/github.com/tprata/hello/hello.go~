@@ -1,0 +1,8 @@
+package main
+
+import "github.com/astaxie/beego"
+
+func main() {
+     println("%s\n", "coucou world");
+    beego.Run()
+}

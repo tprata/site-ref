@@ -1,0 +1,1 @@
+- modifier certains aspect du backend des images pour optimiser les photos de profils
