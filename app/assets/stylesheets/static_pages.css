@@ -1,4 +1,96 @@
-/*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-*/
+
+div.dockContainer {
+    position: fixed;
+    bottom: 12px;
+    height: 120px;
+    padding: 50px 0 0;
+    text-align: center;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    width: 100%;
+    line-height: 1;
+    z-index: 100;
+}
+div.cap {
+	display: block;
+    height: 100px;
+    width: 40px;
+    background: url(/playground/playground/osx-dock/dock-background-left.png) bottom left no-repeat;
+}
+
+div.left {
+	    float: left !important;
+}
+div.dockWrapper {
+	width: auto;
+    display: inline-block;
+    position: relative;
+    border-bottom: solid 2px rgba(255,255,255,.35);
+    line-height: 0;
+}
+ul.osx-dock li a {
+  display: block;
+  height: 50px;
+  padding: 0 1px;
+  margin: 0;
+  -webkit-transition: 0.15s linear;
+  -webkit-transition-property: -webkit-transform margin;
+  -webkit-box-reflect: below 2px; -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.45, transparent), to(rgba(255, 255, 255, 0.25)));
+}
+ 
+ul.osx-dock li a img {
+  width: 48px;
+}
+ 
+ul.osx-dock li:hover {
+  margin-left: 9px; margin-right: 9px;
+  z-index: 200;
+}
+ 
+ul.osx-dock li:hover a {
+  -webkit-transform-origin: center bottom;
+  -webkit-transform: scale(1.5);
+}
+ 
+ul.osx-dock li.nearby {
+  margin-left: 6px; margin-right: 6px;
+  z-index: 100;
+}
+ 
+ul.osx-dock li.nearby a {
+  -webkit-transform-origin: center bottom;
+  -webkit-transform: scale(1.25);
+}
+ 
+ul.osx-dock li span {
+ background: rgba(0,0,0,0.75);
+ position: absolute;
+ bottom: 80px;
+ margin: 0 auto;
+ display: none;
+ width: auto;
+ font-size: 11px;
+ font-weight: bold;
+ padding: 3px 6px;
+ -webkit-border-radius: 6px;
+ color: #fff;
+}
+ ul.osx-dock li:hover span {
+ display: block;
+}
+ul.osx-dock {
+    display: inline-block;
+    height: 130px;
+    padding: 0 40px 0 0;
+    background: url(/playground/playground/osx-dock/dock-background-left.png) no-repeat right bottom;
+    overflow: hidden;
+    margin: 0 0 0 40px;
+}
+ /*	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}*/
